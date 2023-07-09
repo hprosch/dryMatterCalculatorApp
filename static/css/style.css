@@ -1,0 +1,16 @@
+body {
+
+}
+
+table {
+	border-color: black;
+	border-style: solid;
+}
+
+#resultTable {
+	/*display: none;*/
+}
+
+.hidden {
+	display: none;
+}

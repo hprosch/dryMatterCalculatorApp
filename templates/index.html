@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pet Food Dry Matter Calculator</title>
+	<link rel="stylesheet" href="../static/css/style.css">
+</html>
+<body>
+	<main>
+		<h1>Pet Food Dry Matter Calculator</h1>
+
+		<p>Enter the as-fed guarenteed analysis from the ingredient label to calculate the percentages in a dry matter basis.</p>
+
+		<br>
+
+		<!--<form>-->
+			<label for="protein">Protein</label>
+			<input type="number" name="protein" placeholder="%" id="asProtein" required>
+			<span id="spanProtein"></span>
+			<br>
+			<label for="fat">Fat</label>
+			<input type="number" name="fat" placeholder="%" id="asFat" required>
+			<span id="spanFat"></span>
+			<br>
+			<label for="Fiber">Fiber</label>
+			<input type="number" name="fiber" placeholder="%" id="asFiber" required>
+			<span id="spanFiber"></span>
+			<br>
+			<label for="Moisture">Moisture</label>
+			<input type="number" name="moisture" placeholder="%" id="asMoisture" required>
+			<span id="spanMoisture"></span>
+			<br>
+			<button id="calculate">Calculate</button>
+
+		<!--</form>-->
+
+		<table id="resultTable">
+			<th>Dry Matter</th>
+			<tr>
+				<td>Protein: </td>
+				<td id="dmProtein">Protein Placeholder</td>
+			</tr>
+			<tr>
+				<td>Fat: </td>
+				<td id="dmFat">Fat Placeholder</td>
+			</tr>
+			<tr>
+				<td>Fiber: </td>
+				<td id="dmFiber">Fiber Placeholder</td>
+			</tr>
+			<tr>
+				<td>Other: </td>
+				<td id="other">Other Placeholder</td>
+			</tr>
+		</table>
+
+	</main>
+	<script src="../static/js/script.js"></script>
+</body>
+</html>
