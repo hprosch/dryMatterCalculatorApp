@@ -1,16 +1,22 @@
 body {
-
+	color: green;
 }
 
-table {
-	border-color: black;
-	border-style: solid;
+input {
+	width: 3.5em;
+	display: inline-block;
 }
 
-#resultTable {
-	/*display: none;*/
+label {
+	padding-right: 1em;
+	display: inline-block;
+	min-width: 5em;
 }
 
 .hidden {
 	display: none;
+}
+
+#result {
+	width: auto;
 }
