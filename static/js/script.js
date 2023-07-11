@@ -10,4 +10,4 @@ function showResultHeader() {
 	resultHeader.classList.remove('hidden');
 }
 
-calculate.addEventListener("click", showResultHeader);
+//calculate.addEventListener("click", showResultHeader);
