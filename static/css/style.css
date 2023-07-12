@@ -1,5 +1,13 @@
 body {
-	color: green;
+	background-color: #d67012;
+}
+
+#wrapper {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.5em;
+	background-color: white;
 }
 
 input {
@@ -13,6 +21,21 @@ label {
 	min-width: 5.5em;
 }
 
+h1 {
+	color: #452207;
+}
+
+h3 {
+	color: #a29183
+}
+
+img {
+	width: 70%;
+	margin-left: 1em;
+	margin-right: auto;
+	height: auto;
+}
+
 .hidden {
 	display: none;
 }
@@ -20,4 +43,12 @@ label {
 /*CalculateButton*/
 #result {
 	width: auto;
+	color: #452207;
+	background-color: #a29183;
+	border: none;
+	padding: 0.25em;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
