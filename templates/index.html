@@ -9,13 +9,10 @@
 	<body>
 		<div id="wrapper">
 			<main>
+				<img src="{{ url_for('static', filename='kibbles.png')}}" />
 				<h1>Pet Food Dry Matter Calculator</h1>
 
-				<p>Enter the as-fed guarenteed analysis from the ingredient label to calculate the percentages in a dry matter basis.</p>
-
-				<br>
-
-				<img src="{{ url_for('static', filename='kibbles.png')}}" />
+				<p>Enter the as-fed guaranteed analysis from the ingredient label to calculate the percentages in a dry matter basis.</p>
 
 				<br>
 
@@ -53,7 +50,9 @@
 				{% for message in get_flashed_messages() %}
 					<p>{{message}}</p>
 				{% endfor %}
-
+				<footer>
+					Copyright © 2023 Hannah Prosch
+				</footer>
 			</main>
 			<script src="../static/js/script.js"></script>
 		</div>

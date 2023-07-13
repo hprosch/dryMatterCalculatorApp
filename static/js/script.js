@@ -6,6 +6,11 @@ let calculate = document.getElementById('result');
 let resultHeader = document.getElementById('resultHeader');
 resultHeader.classList.add('hidden');
 
+
+/*Add functionality to make image full screen and translucent
+in mobile sized screens.  Image stays left aligned and opaque
+in tablet and full screen renditions. -HP */
+
 function showResultHeader() {
 	resultHeader.classList.remove('hidden');
 }
