@@ -4,12 +4,13 @@
 body {
 	background-color: #d67012;
 	background-image: url("/static/kibbles.png");
-	opacity: 0.75;
+	/*opacity: 0.75;*/
 	margin: 0;
 }
 
 #wrapper {
 	background-color: white;
+	background: rgba(255,255,255,0.75);
 	/*padding-right: 1em;*/
 	/*background-image: url("/static/kibbles.png");
 	opacity: 0.75;*/
@@ -87,6 +88,7 @@ footer {
 	}
 	#wrapper {
 		/*background-image: none;*/
+		background: rgba(255,255,255,1);
 		padding: 0;
 	}
 }
