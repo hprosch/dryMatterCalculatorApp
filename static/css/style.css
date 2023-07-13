@@ -1,17 +1,22 @@
+/*Hannah Prosch*/
+
+/*Mobile & Universal Styles First*/
 body {
 	background-color: #d67012;
+	background-image: url("/static/kibbles.png");
+	opacity: 0.75;
 	margin: 0;
 }
 
 #wrapper {
-	/*width: 90%;*/
-	/*margin-left: auto;
-	margin-right: auto;*/
-	/*padding: 1.5em;*/
 	background-color: white;
-	padding-right: 1em;
-	/*border-radius: 5px;*/
+	/*padding-right: 1em;*/
+	/*background-image: url("/static/kibbles.png");
+	opacity: 0.75;*/
+	height: auto;
+	padding: 1em;
 }
+
 
 input {
 	width: 3.5em;
@@ -34,12 +39,7 @@ h3 {
 }
 
 img {
-	float: left;
-	width: 45%;
-	/*margin-left: none;*/
-	margin-right: auto;
-	height: auto;
-	padding-right: 1em;
+	display: none;
 }
 
 footer {
@@ -63,7 +63,37 @@ footer {
 	border-radius: 5px;
 	
 	padding: 0.45em;
+
+	opacity: 1;
+
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
+}
+
+/*Tablet-Sized Styles*/
+@media only screen and (min-width: 35em) {
+	body {
+		opacity: 1;
+		background-image: none;
+	}
+	img {
+		display: inline;
+		float: left;
+		width: 45%;
+		margin-right: auto;
+		height: auto;
+		padding-right: 1em;
+	}
+	#wrapper {
+		/*background-image: none;*/
+		padding: 0;
+	}
+}
+
+/*Desktop Styles*/
+@media only screen and (min-width: 65em) {
+	#wrapper {
+		padding-right: 1em;
+	}
 }
