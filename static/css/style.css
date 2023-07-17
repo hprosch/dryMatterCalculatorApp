@@ -4,18 +4,21 @@
 body {
 	background-color: #d67012;
 	background-image: url("/static/kibbles.png");
-	/*opacity: 0.75;*/
 	margin: 0;
 }
 
 #wrapper {
 	background-color: white;
 	background: rgba(255,255,255,0.75);
-	/*padding-right: 1em;*/
-	/*background-image: url("/static/kibbles.png");
-	opacity: 0.75;*/
 	height: auto;
 	padding: 1em;
+
+
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
 }
 
 
@@ -33,6 +36,7 @@ label {
 h1 {
 	color: #452207;
 	margin: auto;
+	text-align: center;
 }
 
 h3 {
@@ -46,6 +50,7 @@ img {
 footer {
 	color: #a29183;
 	font-size: small;
+	text-align: center;
 }
 
 
@@ -64,12 +69,7 @@ footer {
 	border-radius: 5px;
 	
 	padding: 0.45em;
-
-	opacity: 1;
-
-	/*display: flex;
-	justify-content: center;
-	align-items: center;*/
+	margin-top: 1em;
 }
 
 /*Tablet-Sized Styles*/
@@ -77,6 +77,14 @@ footer {
 	body {
 		opacity: 1;
 		background-image: none;
+	}
+	#wrapper {
+		background: rgba(255,255,255,1);
+		padding: 0;
+		position: relative;
+		top: 0;
+		-ms-transform: translateY(0%);
+		transform: translateY(0%);
 	}
 	img {
 		display: inline;
@@ -86,10 +94,8 @@ footer {
 		height: auto;
 		padding-right: 1em;
 	}
-	#wrapper {
-		/*background-image: none;*/
-		background: rgba(255,255,255,1);
-		padding: 0;
+	h1 {
+		text-align: left;
 	}
 }
 
