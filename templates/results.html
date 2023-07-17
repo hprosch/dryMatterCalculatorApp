@@ -2,15 +2,36 @@
 
 {% block content %}
 
-<p>Live from results.html!</p>
+<h3>Results:</h3>
 
-<h3>Testing this out here:</h3>
-		
-<p>Moisture: {{moisture}}</p>
-<p>Protein As Fed: {{proteinAsFed}}</p>
-<p>Fat As Fed: {{fatAsFed}}</p>
-<p>Fiber As Fed: {{fiberAsFed}}</p>
-<p>Phospherous As Fed: {{phospherousAsFed}}</p>
-<p>Other As Fed: {{otherAsFed}}</p>
+<table>
+    <tr>
+        <td>Nutrient</td>
+        <td>As Fed Basis</td>
+        <td>Dry Matter Basis</td>
+    </tr>
+    <tr>
+        <td>Protein</td>
+        <td>{{proteinAsFed}}%</td>
+        <td>{{proteinDryMatter}}%</td>
+    </tr>
+    <tr>
+        <td>Fat</td>
+        <td>{{fatAsFed}}%</td>
+        <td>{{fatDryMatter}}%</td>
+    </tr>
+    <tr>
+        <td>Fiber</td>
+        <td>{{fiberAsFed}}%</td>
+        <td>{{fiberDryMatter}}%</td>
+    </tr>
+    <tr id="phospherous"> 
+        <td>Phospherous</td>
+        <td id="phospherousAsFed">{{phospherousAsFed}}%</td>
+        <td>{{phospherousDryMatter}}%</td>
+    </tr>
+</table>
 
 {% endblock %}
+
+{% block script %} <script src="../static/js/script.js"></script> {% endblock %}

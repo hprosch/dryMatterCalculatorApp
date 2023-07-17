@@ -1,13 +1,11 @@
 "use strict";
 
-let calculate = document.getElementById('result');
+/*Capture elements within variables:*/
+let phospherousAsFed = document.getElementById('phospherousAsFed');
+let phospherous = document.getElementById('phospherous');
 
-//Selecting table elements to alter later:
-let resultHeader = document.getElementById('resultHeader');
-resultHeader.classList.add('hidden');
-
-function showResultHeader() {
-	resultHeader.classList.remove('hidden');
+window.onload = function() {
+	if (phospherousAsFed.textContent === '%') {
+		phospherous.classList.add("hidden");
+	}   
 }
-
-//calculate.addEventListener("click", showResultHeader);

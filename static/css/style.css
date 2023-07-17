@@ -33,6 +33,18 @@ label {
 	min-width: 5.5em;
 }
 
+table {
+	border: 1px black solid;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+td {
+	border: 1px black solid;
+}
+
 h1 {
 	color: #452207;
 	margin: auto;
@@ -52,7 +64,6 @@ footer {
 	font-size: small;
 	text-align: center;
 }
-
 
 .hidden {
 	display: none;
