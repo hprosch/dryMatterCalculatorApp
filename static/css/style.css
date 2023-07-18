@@ -34,16 +34,21 @@ label {
 }
 
 table {
-	border: 1px black solid;
+	border-collapse: collapse;
+	text-align: left;
 }
 
-tr {
-	border: 1px solid black;
+th {
+	background-color: #d67012;
+	color: #452207;
 }
 
-td {
-	border: 1px black solid;
+th, td {
+	padding: 0.5em;
 }
+
+tr:nth-child(odd){background-color: #faf0e7}
+tr:nth-child(even){background-color: white}
 
 h1 {
 	color: #452207;
@@ -52,7 +57,7 @@ h1 {
 }
 
 h3 {
-	color: #a29183
+	color: #452207;
 }
 
 img {
@@ -60,7 +65,7 @@ img {
 }
 
 footer {
-	color: #a29183;
+	color: #452207;
 	font-size: small;
 	text-align: center;
 }
@@ -107,6 +112,9 @@ footer {
 	}
 	h1 {
 		text-align: left;
+	}
+	#result {
+		width: 10em;
 	}
 }
 
