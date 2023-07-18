@@ -1,6 +1,10 @@
 /*Hannah Prosch*/
 
 /*Mobile & Universal Styles First*/
+html, body {
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
 body {
 	background-color: #d67012;
 	background-image: url("/static/kibbles.png");
@@ -12,8 +16,6 @@ body {
 	background: rgba(255,255,255,0.75);
 	height: auto;
 	padding: 1em;
-
-
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -59,6 +61,10 @@ h1 {
 h3 {
 	color: #452207;
 	text-align: center;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -109,6 +115,15 @@ footer {
 		top: 0;
 		-ms-transform: translateY(0%);
 		transform: translateY(0%);
+
+		height: 50%;
+
+
+
+		/*position: absolute;
+		top: 50%;
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);*/
 	}
 	img {
 		display: inline;
@@ -130,5 +145,8 @@ footer {
 @media only screen and (min-width: 65em) {
 	#wrapper {
 		padding-right: 1em;
+	}
+	img {
+		height: 100%;
 	}
 }
