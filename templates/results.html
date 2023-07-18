@@ -2,36 +2,35 @@
 
 {% block content %}
 
-<h3>Results:</h3>
-
-<table>
-    <tr>
-        <th>Nutrient</th>
-        <th>As Fed Basis</th>
-        <th>Dry Matter Basis</th>
-    </tr>
-    <tr>
-        <td>Protein</td>
-        <td>{{proteinAsFed}}%</td>
-        <td>{{proteinDryMatter}}%</td>
-    </tr>
-    <tr>
-        <td>Fat</td>
-        <td>{{fatAsFed}}%</td>
-        <td>{{fatDryMatter}}%</td>
-    </tr>
-    <tr>
-        <td>Fiber</td>
-        <td>{{fiberAsFed}}%</td>
-        <td>{{fiberDryMatter}}%</td>
-    </tr>
-    <tr id="phospherous"> 
-        <td>Phospherous</td>
-        <td id="phospherousAsFed">{{phospherousAsFed}}%</td>
-        <td>{{phospherousDryMatter}}%</td>
-    </tr>
-</table>
-
+<div class="center">
+    <table>
+        <tr>
+            <th>Nutrient</th>
+            <th>As Fed Basis</th>
+            <th>Dry Matter Basis</th>
+        </tr>
+        <tr>
+            <td>Protein</td>
+            <td>{{proteinAsFed}}%</td>
+            <td>{{proteinDryMatter}}%</td>
+        </tr>
+        <tr>
+            <td>Fat</td>
+            <td>{{fatAsFed}}%</td>
+            <td>{{fatDryMatter}}%</td>
+        </tr>
+        <tr>
+            <td>Fiber</td>
+            <td>{{fiberAsFed}}%</td>
+            <td>{{fiberDryMatter}}%</td>
+        </tr>
+        <tr id="phospherous"> 
+            <td>Phospherous</td>
+            <td id="phospherousAsFed">{{phospherousAsFed}}%</td>
+            <td>{{phospherousDryMatter}}%</td>
+        </tr>
+    </table>
+</div>
 {% endblock %}
 
 {% block script %} <script src="../static/js/script.js"></script> {% endblock %}

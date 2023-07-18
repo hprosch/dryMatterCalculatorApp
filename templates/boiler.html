@@ -18,33 +18,34 @@
 
 				<h3>As-fed Basis</h3>
 
-				<form action="result" method="post">
-					<label for="protein">Protein:</label>
-					<input type="number" name="protein_input" placeholder="%" step="0.01" id="asProtein" required>
+                <div class="center">
+                    <form action="result" method="post">
+                        <label for="protein">Protein:</label>
+                        <input type="number" name="protein_input" placeholder="%" step="0.01" id="asProtein" required>
 
-					<br>
+                        <br>
 
-					<label for="fat">Fat:</label>
-					<input type="number" name="fat_input" placeholder="%" step="0.01" id="asFat" required>
+                        <label for="fat">Fat:</label>
+                        <input type="number" name="fat_input" placeholder="%" step="0.01" id="asFat" required>
 
-					<br>
-					<label for="fiber">Fiber:</label>
-					<input type="number" name="fiber_input" placeholder="%" step="0.01" id="asFiber" required>
-					
-					<br>
+                        <br>
+                        <label for="fiber">Fiber:</label>
+                        <input type="number" name="fiber_input" placeholder="%" step="0.01" id="asFiber" required>
+                        
+                        <br>
 
-					<label for="moisture">Moisture:</label>
-					<input type="number" name="moisture_input" placeholder="%" step="0.01" id="asMoisture" required>
-					
-					<br>
+                        <label for="moisture">Moisture:</label>
+                        <input type="number" name="moisture_input" placeholder="%" step="0.01" id="asMoisture" required>
+                        
+                        <br>
 
-					<label for="phospherous">Phospherous:</label>
-					<input type="number" name="phospherous_input" placeholder="%" step="0.01" id="asPhospherous">
+                        <label for="phospherous">Phospherous:</label>
+                        <input type="number" name="phospherous_input" placeholder="%" step="0.01" id="asPhospherous">
+                        <br>
 
-					<br>
-
-					<input type="submit" value="Calculate" id="result">
-				</form>
+                        <input type="submit" value="Calculate" id="result">
+                    </form>
+                </div>
 
 				{% block content %} {% endblock %}
 
