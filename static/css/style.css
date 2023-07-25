@@ -143,22 +143,25 @@ footer {
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
+		/*Sets wrapper to viewport height:*/
 		height: 100vh;
 		padding-right: 1em;
 		margin-top: 0;
+		/*Remove 2 column layout:*/
 		display: block;
 		grid-template-columns: none;
 		grid-template-rows: none;
 	}
 
 	img {
+		/*Sets image to viewport height:*/
 		height: 100vh;
 		width: auto;
 	}
 
-	.center {
+	/*.center {
 		display: flex;
 		justify-content: center;
-	}
+	}*/
 
 }
